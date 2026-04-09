@@ -22,7 +22,7 @@
 
 
 
-<meta name="date" content="2026-04-03" />
+<meta name="date" content="2026-04-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -187,7 +187,7 @@
 <td align="left">expect_true( object = is.FIMSFit(fit_age_length_comp) )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#29</td>
-<td align="left">2026-04-03 13:23:22.916566</td>
+<td align="left">2026-04-09 05:20:27.756913</td>
 </tr>
 <tr class="even">
 <td align="left"><code>is.FIMSFit()</code> works with correct inputs</td>
@@ -195,7 +195,7 @@
 <td align="left">expect_equal( object = slotNames(fit_age_length_comp), expected = expected_names )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#38</td>
-<td align="left">2026-04-03 13:23:22.933206</td>
+<td align="left">2026-04-09 05:20:27.769878</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>is.FIMSFit()</code> returns correct outputs for edge cases</td>
@@ -203,7 +203,7 @@
 <td align="left">expect_false(is.FIMSFit(“not_a_FIMSFit”))</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#47</td>
-<td align="left">2026-04-03 13:23:23.29619</td>
+<td align="left">2026-04-09 05:20:27.786788</td>
 </tr>
 <tr class="even">
 <td align="left"><code>is.FIMSFit()</code> returns correct outputs for edge cases</td>
@@ -211,7 +211,7 @@
 <td align="left">expect_no_error(print(fit_age_length_comp))</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#52</td>
-<td align="left">2026-04-03 13:23:23.344393</td>
+<td align="left">2026-04-09 05:20:27.83325</td>
 </tr>
 <tr class="odd">
 <td align="left"><code>is.FIMSFit()</code> returns correct outputs for edge cases</td>
@@ -219,7 +219,7 @@
 <td align="left">expect_no_error(print(fit_age_length_comp))</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#57</td>
-<td align="left">2026-04-03 13:23:23.390633</td>
+<td align="left">2026-04-09 05:20:27.877934</td>
 </tr>
 <tr class="even">
 <td align="left"><code>is.FIMSFit()</code> returns correct outputs for edge cases</td>
@@ -227,7 +227,7 @@
 <td align="left">expect_no_error(print(fit_age_length_comp))</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#62</td>
-<td align="left">2026-04-03 13:23:23.436976</td>
+<td align="left">2026-04-09 05:20:27.922634</td>
 </tr>
 <tr class="odd">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -235,7 +235,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE, control = bad_control), regexp = “Optimization failed convergence checks” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#93</td>
-<td align="left">2026-04-03 13:26:51.753174</td>
+<td align="left">2026-04-09 05:23:54.483701</td>
 </tr>
 <tr class="even">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -243,7 +243,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE, control = bad_control), regexp = “Maximum absolute gradient” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#107</td>
-<td align="left">2026-04-03 13:30:27.774587</td>
+<td align="left">2026-04-09 05:27:28.097364</td>
 </tr>
 <tr class="odd">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -251,7 +251,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE, control = bad_control), regexp = “Optimization resulted in high gradients” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#121</td>
-<td align="left">2026-04-03 13:35:07.100451</td>
+<td align="left">2026-04-09 05:32:05.773251</td>
 </tr>
 <tr class="even">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -259,7 +259,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE), regexp = “Large condition number detected in Hessian” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#161</td>
-<td align="left">2026-04-03 13:36:35.102259</td>
+<td align="left">2026-04-09 05:33:33.152</td>
 </tr>
 <tr class="odd">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -267,7 +267,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE), regexp = “NA standard errors” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#199</td>
-<td align="left">2026-04-03 13:38:18.87024</td>
+<td align="left">2026-04-09 05:35:17.004862</td>
 </tr>
 <tr class="even">
 <td align="left">fit_fims() errors when optimization fails to converge</td>
@@ -275,7 +275,7 @@
 <td align="left">expect_warning( result &lt;- initialized_model |&gt; fit_fims(optimize = TRUE), regexp = “Standard error calculations failed convergence checks” )</td>
 <td align="left"><span title="This expectation is successful.">✅ <font color='green'>Success</font></span></td>
 <td align="left">test-fimsfit.R#221</td>
-<td align="left">2026-04-03 13:44:17.188169</td>
+<td align="left">2026-04-09 05:41:15.030817</td>
 </tr>
 </tbody>
 </table>
