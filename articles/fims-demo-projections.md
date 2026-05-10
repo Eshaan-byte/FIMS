@@ -18,6 +18,7 @@ please report bugs in the code to our [Issues
 page](https://github.com/NOAA-FIMS/FIMS/Issues).
 
 ``` r
+
 library(FIMS)
 library(ggplot2)
 library(stockplotr)
@@ -39,6 +40,7 @@ found in the [introductory
 vignette](https://NOAA-FIMS.github.io/FIMS/articles/fims-demo.md).
 
 ``` r
+
 # Bring the package data into your environment
 data("data_big")
 # Prepare the package data for being used in a FIMS model
@@ -57,6 +59,7 @@ reference points such as fishing mortality at maximum sustainable yield
 or biomass at maximum sustainable yield.
 
 ``` r
+
 years_of_projection <- 10
 ```
 
@@ -75,6 +78,7 @@ into wrapper functions but as of FIMS version 0.8.0 some manipulation of
 the data is needed.
 
 ``` r
+
 # Add a single row of landings to the original data for the maximum year you
 # want to project to
 data_big_with_extra_year <- dplyr::add_row(
@@ -149,6 +153,7 @@ will ensure that all time-series parameters, e.g., natural mortality,
 have the correct dimensions.
 
 ``` r
+
 # Take the default configuration with the new data to create some default
 # parameters that we alter to make the model behave a little better
 parameters_projection <- create_default_parameters(
@@ -292,6 +297,7 @@ which facilitates that the model output will be in the same format that
 users are used to.
 
 ``` r
+
 projection_fit <- parameters_projection |>
   initialize_fims(data = data_4_projections) |>
   fit_fims(optimize = TRUE)
@@ -302,8 +308,8 @@ projection_fit <- parameters_projection |>
     ## ℹ Maximum gradient went from 0.00316 to 0.00022 after 3 steps.
     ## ✔ Finished optimization
     ## ✔ Finished sdreport
-    ## ℹ FIMS model version: 0.9.2
-    ## ℹ Total run time was 1.25861 minutes
+    ## ℹ FIMS model version: 0.9.3
+    ## ℹ Total run time was 1.23999 minutes
     ## ℹ Number of parameters: fixed_effects=49, random_effects=29, and total=78
     ## ℹ Maximum gradient= 0.00022
     ## ℹ Negative log likelihood (NLL):
@@ -312,6 +318,7 @@ projection_fit <- parameters_projection |>
     ## ℹ Terminal SB= 993.45041
 
 ``` r
+
 clear()
 ```
 
@@ -326,6 +333,7 @@ model without projections we could have plotted that here as well for
 comparison.
 
 ``` r
+
 stockplotr::plot_biomass(
   list(
     "age" = get_estimates(projection_fit) |>
@@ -337,11 +345,6 @@ stockplotr::plot_biomass(
   )
 )
 ```
-
-    ## Warning: Unknown or uninitialised column: `era`.
-
-    ## Warning in max(dat$year[dat$era == era_name], na.rm = TRUE): no non-missing
-    ## arguments to max; returning -Inf
 
     ## Warning: Removed 1 row containing missing values or values outside the scale range
     ## (`geom_hline()`).
